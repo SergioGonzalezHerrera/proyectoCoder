@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+    <header id="volverAlPrincipio">
+        <!-- encabezado/barra de navegación -->
+        <nav>
+            <ul class="barraNav">
+                <li> 
+                    <a href="../index.html">INICIO</a>  
+                </li>
+                <li>
+                    <a href="./productos.html">PRODUCTOS</a>
+                </li>
+                <li>
+                    <a href="./catalogo.html">CATÁLOGO</a>
+                </li>
+                <li>
+                    <a href="./empresa.html">EMPRESA</a>
+                </li>
+                <li>
+                    <a href="./contacto.html">CONTACTO</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <article>
+            <form action="#">
+				<input type="text" placeholder="DECIME TU NOMBRE"><br>
+				<label for="email">Decime tu email: <br>
+					<input type="email" placeholder="aaa@gmail.com" name="email"><br>
+				</label>
+				<label for="Observaciones"> Deja tu comentario:<br>
+					<textarea placeholder="Observaciones"></textarea>
+				</label> <br>
+				<input type="number" placeholder="DECIME TU EDAD"><br>
+				<div><p class="pDeForm">Sexo:</p>
+					<div>Masculino
+						<input type="radio" name="lado" value="Masculino">
+					</div>
+					<div>Femenino
+						<input type="radio" name="lado" value="Femenino">
+					</div>
+                    <div>No binario
+						<input type="radio" name="lado" value="noBinario">
+					</div>
+				</div>
+				<p class="pDeForm">Que letra te gusta mas?</p>
+				<select name="letra" id="letra"> 
+					<option value="x">X</option>
+					<option value="y">Y</option>
+					<option value="z">Z</option>
+				</select>
+				<div>Queres recibir info sobre nosotros?
+				<input type="checkbox" name="acepta" value="1"></div>
+				<input type="submit" value="ENVIAR FORMULARIO">
+				<input type="reset" value="BORRAR TODO">
+			</form>
+        </article>
+    </main>
+
+    <footer id="pie">
+        <!-- pie de pagina -->
+        <p><a href=#volverAlPrincipio>Volver al Inicio</a></p>
+    </footer>
+    
+</body>
+</html>

@@ -1,0 +1,526 @@
+/*
+67, 124, 144 azul celeste
+37, 89, 87 verde
+237, 184, 139 naranja
+49, 30, 16 bordo
+211, 82, 105 rojo
+*/
+
+@import url('https://fonts.googleapis.com/css2?family=Dosis:wght@200;300&display=swap');
+
+/*tipografía font-family: 'Dosis', sans-serif;*/
+
+/*reset*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: boder-box;
+}
+
+/*
+
+todo lo editado con boxModel
+
+define color de fondo de todos los headers, le asigna el tipo de fuente a todos los headers y con el padding se agrega "relleno"
+header {
+    background-color: rgb(49, 30, 16);
+    font-family: 'Dosis', sans-serif;
+    padding: 30px;
+}
+le saca los bullets a la lista del hadear que esta marcada como clase en todos los html
+.barraNav{
+    list-style: none;
+}
+quita el decorado de hipervinculo y le da color blanco a la letra de todos los html
+.barraNav li a{
+    text-decoration: none;
+    color: white;
+}
+hace que los items de la lista pasen de estar uno arriba del otro a estar uno al lado del otro, le asigna tamaño de letra
+li{
+    display: inline-block;
+    font-size: 30px;
+}
+asigna color de fondo a todos los bodys
+body{
+    background-color: rgb(67, 124, 144);
+}
+asigna tipografía y color de letra a todos los main
+main{
+    font-family: 'Dosis', sans-serif;
+    color: rgb(49, 30, 16);
+}
+asigna tipogafía y color de letra a todos los section
+section{
+    font-family: 'Dosis', sans-serif;
+    color: rgb(49, 30, 16);
+}
+tamaño fuente, centrado, relleno, borde y margen de todos los p
+p{
+    font-size: 25px;
+    text-align: center;
+    padding: 20px;
+    border: 5px solid rgb(49, 30, 16);
+    margin: 10px 200px 10px 200px;
+    border-radius: 10px;
+}
+h1{
+    text-align: center;
+    padding: 20px;
+    border: 5px solid rgb(49, 30, 16);
+    margin: 10px 100px 10px 100px;
+    border-radius: 10px;
+}
+h2{
+    text-align: center;
+    padding: 20px;
+    border: 5px solid rgb(49, 30, 16);
+    margin: 10px 200px 10px 200px;
+    border-radius: 10px;
+}
+reduce tamaño de la imagen porque desbordaba, border para que siga el estilo de la web y margin para centrar
+img{
+    width: 50%;
+    height: 50%;
+    border: 5px solid rgb(49, 30, 16);
+    margin: 10px 370px 10px;
+    border-radius: 10px;
+}
+footer{
+    background-color: rgb(49, 30, 16);
+
+    padding: 30px;
+}
+footer p{
+    text-align: center;
+    font-family: 'Dosis', sans-serif;
+    font-size: 25px;
+    
+}
+footer p a{
+    text-decoration: none;
+    color: white;
+}
+formato del formulario
+article{
+    text-align: left;
+    font-family: 'Dosis', sans-serif;
+    color: rgb(49, 30, 16);
+}
+label{
+    font-size: 25px;
+}
+.pDeForm
+{
+    text-align: left;
+    font-family: 'Dosis', sans-serif;
+    color: rgb(49, 30, 16);
+    font-size: 25px;
+    padding: 0;
+    border: 0;
+    margin: 0;
+}
+
+*/
+
+/* practicando grids
+body{
+    display: grid;
+    grid-template-areas: 
+    "header header"
+    "main ofertaDelDia"
+    "main productoDestacado"
+    "footer footer";
+    grid-template-columns: 60% 40%;
+    grid-template-rows: 100px 400px 400px 100px;
+    background-color: rgb(67, 124, 144);
+}
+.header{
+    grid-area: header;
+    background-color: rgb(49, 30, 16);
+    font-family: 'Dosis', sans-serif;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+acomoda los iconos dela navbar pero pierde el responsive
+.barraNav{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+.barraNav li a{
+    border: 2px solid rgb(67, 124, 144);
+    border-radius: 5px;
+}
+.main{
+    grid-area: main;
+    font-family: 'Dosis', sans-serif;
+    color: rgb(49, 30, 16);
+}
+main h1{
+    text-align: center;
+    font-size: 50px;
+}
+main h2{
+    text-align: center;
+    font-size: 40px;
+}
+main p{
+    font-size: 30px;
+}
+.ofertaDelDia{
+    grid-area: ofertaDelDia;
+    font-family: 'Dosis', sans-serif;
+    color: rgb(49, 30, 16);
+}
+.productoDestacado{
+    grid-area: productoDestacado;
+    font-family: 'Dosis', sans-serif;
+    color: rgb(49, 30, 16);
+}
+.footer{
+    grid-area: footer;
+    background-color: rgb(49, 30, 16);
+}
+.barraNav{
+    list-style: none;
+}
+.barraNav li a{
+    text-decoration: none;
+    color: white;
+}
+li{
+    display: inline-block;
+    font-size: 30px;
+}
+footer{
+    background-color: rgb(49, 30, 16);
+}
+footer p{
+    text-align: center;
+    font-family: 'Dosis', sans-serif;
+    font-size: 25px;
+}
+footer p a{
+    text-decoration: none;
+    color: white;
+}
+*/
+.header{
+    grid-area: header;
+    background-color: rgb(49, 30, 16);
+}
+.main{
+    grid-area: main;
+    color: rgb(49, 30, 16);
+    text-align: center;
+    margin-bottom: 5px;
+    margin-top: 5px;
+}
+.ofertaDelDia{
+    grid-area: ofertaDelDia;
+    color: rgb(49, 30, 16);
+    text-align: center;
+    margin-bottom: 5px;
+    margin-top: 5px;
+}
+.productoDestacado{
+    grid-area: productoDestacado;
+    color: rgb(49, 30, 16);
+    text-align: center;
+    margin-bottom: 5px;
+    margin-top: 5px;
+}
+.footer{
+    grid-area: footer;
+    margin-top: 5px;
+    display: grid;
+    justify-content: space-around;
+    justify-items: center;
+    background-color: rgb(49, 30, 16);
+}
+.footer p a{
+    text-decoration: none;
+    color: white;
+}
+.grillaBodyIndex{
+    display: grid;
+    grid-template-areas: 
+    "header"
+    "main"
+    "ofertaDelDia"
+    "productoDestacado"
+    "footer";
+}
+body{
+    background-color: rgb(67, 124, 144);
+    font-family: 'Dosis', sans-serif;
+    min-height: 100vh;
+}
+.barraNav li a{
+    text-decoration: none;
+    color: white;
+}
+.barraNav li{
+    padding: 3px;
+    border: 3px solid white;
+    border-radius: 3px;
+    margin: 3px;
+}
+.barraNav{
+    text-align: center;
+    list-style: none;
+    margin-bottom: 5px;
+}
+.imagen{
+    border: 3px solid black;
+    border-radius: 5px;
+    max-width: 220px;
+    height: auto;
+}
+.icono{
+    max-width: 32px;
+    height: auto;
+    margin-top: 10px;
+}
+.redesSociales{
+    display: flex;
+    flex-direction: column;
+    align-items:center;
+}
+
+.imagenProductos{
+    max-width: 220px;
+    height: 230px;
+    border: 3px solid black;
+    border-radius: 5px;
+}
+.tituloProductos{
+    grid-area: titulo;
+}
+.sabanasProductos{
+    grid-area: sabanas;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.acolchadosProductos{
+    grid-area: acolchado;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.cortinasProductos{
+    grid-area: cortina;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.toallasProductos{
+    grid-area: toalla;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.batasProductos{
+grid-area: bata;
+display: flex;
+flex-direction: column;
+align-items: center;
+}
+.pijamasProductos{
+    grid-area: pijama;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.grillaProductos{
+    display: grid;
+    grid-template-areas:
+    "titulo"
+    "sabanas"
+    "acolchado"
+    "cortina"
+    "toalla"
+    "bata"
+    "pijama";
+    justify-content: center;
+    justify-items: center;
+}
+.imagenCat{
+    max-width: 220px;
+    height: auto;
+    margin: 5px;
+    border: 5px solid black;
+    border-radius: 10px;
+}
+.tituloCatalogo{
+    grid-area: tituloCatalogo;
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+}
+.sabanaCatalogo{
+    grid-area: sabanaCatalogo;
+    text-align: center;
+    flex-direction: column;
+    align-items: center;
+}
+.acolchadoCatalogo{
+    grid-area: acolchadoCatalogo;
+    text-align: center;
+    flex-direction: column;
+    align-items: center;
+}
+.cortinaCatalogo{
+    grid-area: cortinaCatalogo;
+    text-align: center;
+    flex-direction: column;
+    align-items: center;
+}
+.toallaCatalogo{
+    grid-area: toallaCatalogo;
+    text-align: center;
+    flex-direction: column;
+    align-items: center;
+}
+.mainCat{
+    grid-area: mainCat;
+}
+.mainCatGrilla{
+    display: grid;
+    grid-template-areas: 
+    "tituloCatalogo"
+    "sabanaCatalogo"
+    "acolchadoCatalogo"
+    "cortinaCatalogo"
+    "toallaCatalogo";
+}
+.grillaBodyCatalogo{
+    display: grid;
+    grid-template-areas: 
+    "header"
+    "mainCat"
+    "footer";
+    }
+@media (min-width:480px) {
+    .grillaBodyIndex{
+        display: grid;
+        grid-template-areas:
+        "header header"
+        "main main"
+        "ofertaDelDia productoDestacado"
+        "footer footer";
+        grid-template-columns: 50% 50%;
+    }
+    .mainCatGrilla{
+        display: grid;
+        grid-template-areas: 
+        "tituloCatalogo tituloCatalogo"
+        "sabanaCatalogo acolchadoCatalogo"
+        "cortinaCatalogo toallaCatalogo";
+        grid-template-columns: 50% 50%;
+    }
+    .barraNav{
+        display:flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+    }
+    .redesSociales{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+    }
+    .icono{
+        padding: 5px;
+        max-width: 48px;
+        height: auto;
+    }
+    .main h1{
+        font-size: 45px;
+    }
+    .main h2{
+        font-size: 35px;
+    }
+    .main p{
+        font-size: 25px;
+    }
+    .grillaProductos{
+        display: grid;
+        grid-template-areas:
+        "titulo titulo"
+        "sabanas acolchado"
+        "cortina toalla"
+        "bata pijama";
+        justify-content: space-around;
+        justify-items: center;
+    }
+    p{
+        font-size: 25px;
+    }
+    h2{
+        font-size: 35px;
+    }
+    h3{
+        font-size: 35px;
+    }
+}
+@media (min-width:720px) {
+    .grillaBodyIndex{
+        grid-template-areas:
+        "header main main"
+        "header ofertaDelDia productoDestacado"
+        "footer footer footer";
+        grid-template-columns: 150px auto auto;
+    }
+    .main h1{
+        font-size: 55px;
+    }
+    .main h2{
+        font-size: 45px;
+    }
+    .main p{
+        font-size: 35px;
+    }
+    .imagen{
+        max-width: 265px;
+        height: auto;
+    }
+    .icono{
+        padding: 5px;
+        max-width: 64px;
+        height: auto;
+    }
+    p{
+        font-size: 35px;
+    }
+    h2{
+        font-size: 45px;
+    }
+    h3{
+        font-size: 35px;
+    }
+    .grillaProductos{
+        display: grid;
+        grid-template-areas:
+        "titulo titulo titulo"
+        "sabanas acolchado cortina"
+        "toalla bata pijama"
+    }
+    .barraNavIndex{
+        display: flex;
+        flex-direction: column;
+    }
+    .mainCatGrilla{
+        display: grid;
+        grid-template-areas: 
+        "tituloCatalogo"
+        "sabanaCatalogo"
+        "acolchadoCatalogo"
+        "cortinaCatalogo"
+        "toallaCatalogo";
+        grid-template-columns: 100%;
+    }
+}
