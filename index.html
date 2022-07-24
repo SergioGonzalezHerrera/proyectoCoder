@@ -2,71 +2,126 @@
 <!--tpo de documento-->
 <html lang="en">
 <!-- abre etiqueta html y le da atributo de idioma "ingles"-->
+
 <head>
     <!-- se comunica con el servidor-->
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
     <link rel="stylesheet" href="./css/style.css">
     <title>Inicio</title>
 </head>
+
 <body>
-    <div class="grillaBodyIndex">
-        <header id="volverAlPrincipio" class="header">
-            <!-- encabezado/barra de navegación -->
-            <nav> 
-                <ul class="barraNav barraNavIndex">
-                    <li data-aos="zoom-out"> 
-                        <a href="index.html">INICIO</a>  
-                    </li>
-                    <li data-aos="zoom-out">
-                        <a href="./sections/productos.html">PRODUCTOS</a>
-                    </li>
-                    <li data-aos="zoom-out">
-                        <a href="./sections/catalogo.html">CATALOGO</a>
-                    </li>
-                    <li data-aos="zoom-out">
-                        <a href="./sections/empresa.html">EMPRESA</a>
-                    </li>
-                    <li data-aos="zoom-out">
-                        <a href="./sections/contacto.html">CONTACTO</a>
-                    </li>
-                </ul>
+    <header id="volverAlPrincipio" class="header">
+        <div class="container-fluid">
+            <nav class="navbar navbar-expand-lg navbar-dark">
+                <div class="container-fluid">
+                    <a class="navbar-brand nombreNavbar" href="index.html">Huellas</a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarNav">
+                        <ul class="navbar-nav">
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link active" href="./sections/empresa.html">Empresa</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link active" href="./sections/productos.html">Productos</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link active" href="./sections/catalogo.html">Catálogo</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link active" href="./sections/contacto.html">Contacto</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
             </nav>
-        </header>
-        <main class="main">
-            <h1>Huellas</h1>
-            <h2>Tu lugar de compra</h2>
-            <h2>Ropa de blanco para tu hogar</h2>
-            <p>En nuestro comercio podes encontrar distintos artículos: sábanas, acolchados, cortinas, batas y más. Te invitamos a visitarnos en nuestro nuevo local comercial, solicitar visita a domicilio por venta por catálogo o visitar nuestras redes sociales.
-            </p>
-        </main>
-        <div class="ofertaDelDia">
-            <h3>Nuestra oferta del día!</h3>
-                <img class="imagen" data-aos="fade-up" src="./image/acolchadoAlaskaCemento.jpg" alt="Acolchado modelo Alaska color cemento">
-            <p>Kit de 2 y 3 piezas compuesto por edredón de coral fleece combinado con corderito en el frente y reverso + 1 ó 2 fundas de almohadón.</p>
         </div>
-        <div class="productoDestacado">
-            <h3>Nuesto producto mas vendido!</h3>
-                <img class="imagen" data-aos="fade-up" src="./image/batasJeanCartier.jpg" alt="Batas Jean Cartier de toalla colores blanco, gris, natural, bordo y azul marino">
-            <p>Bata de toalla de adulto. 100% ALGODÓN. Colores: Blanco - Gris - Natural -Bordo - Azul marino</p>
+    </header>
+    <div class="row">
+        <div class="col-sm-6 col-lg -4">
+            <main class="main">
+                <div class="container-fluid">
+                    <div class="card m-3">
+                        <div class="card-body">
+                            <h1>Huellas</h1>
+                            <h2>Tu lugar de compra</h2>
+                            <h2>Ropa de blanco para tu hogar</h2>
+                            <p>En nuestro comercio podes encontrar distintos artículos: sábanas, acolchados, cortinas, batas y
+                                más. Te invitamos a visitarnos en nuestro nuevo local comercial, solicitar visita a domicilio
+                                por venta por catálogo o visitar nuestras redes sociales.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </main>
         </div>
-        <footer id="pie" class="footer">
-            <p><a href=#volverAlPrincipio>Volver al Inicio</a></p>
-            <div class="redesSociales">
-                    <img class="icono" src="./image/facebook64px.png" alt="Icono Facebook">
-                <p class="facebook"><a href="">Facebook</a></p>
-                    <img class="icono" src="./image/instagram64px.png" alt="Icono instagram">
-                <p class="instagram"><a href="">Instagram</a></p>
-                    <img class="icono" src="./image/wsp64px.png"  alt="Icono WhatsApp">
-                <p class="whatsapp"><a href="">WhatsApp</a></p>
+        <div class="col-sm-6 col-lg-8">
+            <div class="container-fluid">
+                <div id="carouselExampleCaptions" class="carousel slide m-3" data-bs-ride="carousel">
+                    <div class="carousel-indicators">
+                        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
+                            aria-current="true" aria-label="Slide 1"></button>
+                        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+                            aria-label="Slide 2"></button>
+                    </div>
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img src="./image/acolchadoAlaskaCemento.jpg" class="d-block w-100" alt="Alcolchado modelo alaska color cemento">
+                            <div class="carousel-caption d-md-block">
+                                <h5>Oferta del día</h5>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <img src="./image/batasJeanCartier.jpg" class="d-block w-100" alt="Batas de distintos colores">
+                            <div class="carousel-caption d-md-block">
+                                <h5>Producto más vendido</h5>
+                            </div>
+                        </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
+                        data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
+                        data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
+                </div>
             </div>
-        </footer>
+        </div>
     </div>
+    <footer id="pie" class="footer">
+        <p><a href=#volverAlPrincipio>Volver al Inicio</a></p>
+        <div class="redesSociales">
+            <img class="icono" src="./image/facebook64px.png" alt="Icono Facebook">
+            <p class="facebook"><a href="https://www.facebook.com">Facebook</a></p>
+            <img class="icono" src="./image/instagram64px.png" alt="Icono instagram">
+            <p class="instagram"><a href="https://www.instagram.com">Instagram</a></p>
+            <img class="icono" src="./image/wsp64px.png" alt="Icono WhatsApp">
+            <p class="whatsapp"><a href="https://wa.me/5492604399618">WhatsApp</a></p>
+        </div>
+    </footer>
+
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
         AOS.init();
     </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous">
+    </script>
 </body>
+
 </html>
