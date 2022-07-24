@@ -5,101 +5,138 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
     <link rel="stylesheet" href="../css/style.css">
     <title>Productos</title>
 </head>
 <body>
     <header id="volverAlPrincipio" class="header">
-        <!-- encabezado/barra de navegación -->
-        <nav>
-            <ul class="barraNav">
-                <li data-aos="zoom-out"> 
-                    <a href="../index.html">INICIO</a>  
-                </li>
-                <li data-aos="zoom-out">
-                    <a href="./productos.html">PRODUCTOS</a>
-                </li>
-                <li data-aos="zoom-out">
-                    <a href="./catalogo.html">CATÁLOGO</a>
-                </li>
-                <li data-aos="zoom-out">
-                    <a href="./empresa.html">EMPRESA</a>
-                </li>
-                <li data-aos="zoom-out">
-                    <a href="./contacto.html">CONTACTO</a>
-                </li>
-            </ul>
-        </nav>
+        <div class="container-fluid">
+            <nav class="navbar navbar-expand-lg navbar-dark">
+                <div class="container-fluid">
+                    <a class="navbar-brand nombreNavbar" href="../index.html">Huellas</a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarNav">
+                        <ul class="navbar-nav">
+                            <li class="nav-item">
+                                <a class="nav-link active" href="../index.html">Home</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link active" href="empresa.html">Empresa</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link active" href="productos.html">Productos</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link active" href="catalogo.html">Catálogo</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link active" href="contacto.html">Contacto</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </div>
     </header>
 
     <main>
-        <div class="grillaProductos">
             <div class="tituloProductos">
-                <h1>Nuestros productos</h1>
+                <div class="container-fluid">
+                    <div class="card m-3">
+                        <div class="card-body">
+                            Nuestos productos.
+                        </div>
+                    </div>
+                </div>
             </div>
-            <div class="sabanasProductos">
-                <h2>Sábanas</h2>
-                <img class="imagenProductos" data-aos="fade-up" src="../image/sabanaProductos.png" alt="Juego de sábanas color lila claro">
-                <p>Sábanas Jean Cartier y otras marcas.</p>
+
+        <div class="row row-cols-1 row-cols-sm-2 row-cols-lg-3">
+
+            <div class="container-fluid">
+                <div class="card m-3">
+                    <img src="../image/sabanaProductos.png" class="card-img-top" alt="Sábanas">
+                    <div class="card-body">
+                        <h5 class="card-title">Sábanas</h5>
+                        <p class="card-text">Jean Cartier</p>
+                        <a href="#" class="btn btn-primary">Ver en Catálogo</a>
+                    </div>
+                </div>
             </div>
-            <div class="acolchadosProductos">
-                <h2>Acolchados</h2>
-                <img class="imagenProductos" data-aos="fade-up" src="../image/acolchadoProductos.png" alt="Acolchado modelo Rusia color negro">
-                <p>Acolchados Jean Cartier y otras marcas.</p>
+
+            <div class="container-fluid">
+                <div class="card m-3">
+                    <img src="../image/acolchadoProductos.png" class="card-img-top" alt="Acolchado">
+                    <div class="card-body">
+                        <h5 class="card-title">Acolchados</h5>
+                        <p class="card-text">Jean Cartier</p>
+                        <a href="#" class="btn btn-primary">Ver en Catálogo</a>
+                    </div>
+                </div>
             </div>
-            <div class="cortinasProductos">
-                <h2>Cortinas</h2>
-                <img class="imagenProductos" data-aos="fade-up" src="../image/cortinaProductos.png" alt="Cortinas modelo Zigzag colores rose, visón y blanco">
-                <p>Cortinas Jean Cartier y otras marcas.</p>
+
+            <div class="container-fluid">
+                <div class="card m-3">
+                    <img src="../image/cortinaProductos.png" class="card-img-top" alt="Cortina">
+                    <div class="card-body">
+                        <h5 class="card-title">Cortinas</h5>
+                        <p class="card-text">Jean Cartier</p>
+                        <a href="#" class="btn btn-primary">Ver en Catálogo</a>
+                    </div>
+                </div>
             </div>
-            <div class="toallasProductos">
-                <h2>Toallas/Toallones</h2>
-                <img class="imagenProductos" data-aos="fade-up" src="../image/toallaProductos.png" alt="Toallas verde, ciruela, esmeralda, azul y coral sobre una mesa">
-                <p>Toallas Jean Cartier y otras marcas</p>
+
+            <div class="container-fluid">
+                <div class="card m-3">
+                    <img src="../image/toallaProductos.png" class="card-img-top" alt="Toallas varios colores">
+                    <div class="card-body">
+                        <h5 class="card-title">Toallas</h5>
+                        <p class="card-text">Jean Cartier</p>
+                        <a href="#" class="btn btn-primary">Ver en Catálogo</a>
+                    </div>
+                </div>
             </div>
-            <div class="batasProductos">
-                <h2>Batas</h2>
-                <img class="imagenProductos" data-aos="fade-up" src="../image/bataProductos.png" alt="Batas de toalla colores blanco, gris, natural, bordó y azul marino">
-                <p>Batas Jean Cartier y otras marcas</p>
+
+            <div class="container-fluid">
+                <div class="card m-3">
+                    <img src="../image/bataProductos.png" class="card-img-top" alt="Batas varios colores">
+                    <div class="card-body">
+                        <h5 class="card-title">Batas</h5>
+                        <p class="card-text">Jean Cartier</p>
+                        <a href="#" class="btn btn-primary">Ver en Catálogo</a>
+                    </div>
+                </div>
             </div>
-            <div class="pijamasProductos">
-                <h2>Pijamas</h2>
-                <img class="imagenProductos" data-aos="fade-up" src="../image/pijamaProductos.jpeg" alt="Pijamas en tonos rosados, grises y blancos.">
-                <p>Pijamas de varias marcas.</p>
+
+            <div class="container-fluid">
+                <div class="card m-3">
+                    <img src="../image/pijamaProductos.jpeg" class="card-img-top" alt="Pijamas varios colores">
+                    <div class="card-body">
+                        <h5 class="card-title">Pijamas</h5>
+                        <p class="card-text">Marcas varias.</p>
+                        <a href="#" class="btn btn-primary">Ver en Catálogo</a>
+                    </div>
+                </div>
             </div>
         </div>
     </main>
-
     <footer id="pie" class="footer">
-        <!-- pie de pagina -->
         <p><a href=#volverAlPrincipio>Volver al Inicio</a></p>
         <div class="redesSociales">
-            <!-- <picture>
-                <source media="(min-width:480px )" srcset="image/facebook32px.png">
-                <source media="(min-width:720px )" srcset="image/facebook48px.png">
-                <source media="(min-width:1024px )" srcset="image/facebook64px.png"> -->
                 <img class="icono" src="../image/facebook64px.png" alt="Icono Facebook">
-            <!-- </picture> -->
             <p class="facebook"><a href="">Facebook</a></p>
-            <!-- <picture>
-                <source media="(min-width:480px )" srcset="image/instagram32px.png">
-                <source media="(min-width:720px )" srcset="image/instagram48px.png">
-                <source media="(min-width:1024px )" srcset="image/instagram64px.png"> -->
                 <img class="icono" src="../image/instagram64px.png" alt="Icono instagram">
-            <!-- </picture> -->
             <p class="instagram"><a href="">Instagram</a></p>
-            <!-- <picture>
-                <source media="(min-width:480px )" srcset="image/wsp32px.png">
-                <source media="(min-width:720px )" srcset="image/wsp48px.png">
-                <source media="(min-width:1024px )" srcset="image/wsp64px.png"> -->
                 <img class="icono" src="../image/wsp64px.png"  alt="Icono WhatsApp">
-            <!-- </picture> -->
             <p class="whatsapp"><a href="">WhatsApp</a></p>
         </div>
     </footer>
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-    <script>
-        AOS.init();
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous">
     </script>
 </body>
 </html>
