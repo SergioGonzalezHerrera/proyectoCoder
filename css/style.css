@@ -49,3 +49,9 @@ body{
     flex-direction: row;
     align-items:baseline;
 }
+.bg-marron{
+    background-color: rgb(49, 30, 16);
+}
+.btn-primary{
+    background-color: rgb(67, 124, 144);
+}
