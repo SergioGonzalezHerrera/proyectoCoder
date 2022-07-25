@@ -10,68 +10,85 @@
     <title>Contacto</title>
 </head>
 <body>
-    <header id="volverAlPrincipio">
-        <!-- encabezado/barra de navegación -->
-        <nav>
-            <ul class="barraNav">
-                <li> 
-                    <a href="../index.html">INICIO</a>  
-                </li>
-                <li>
-                    <a href="./productos.html">PRODUCTOS</a>
-                </li>
-                <li>
-                    <a href="./catalogo.html">CATÁLOGO</a>
-                </li>
-                <li>
-                    <a href="./empresa.html">EMPRESA</a>
-                </li>
-                <li>
-                    <a href="./contacto.html">CONTACTO</a>
-                </li>
-            </ul>
-        </nav>
+    <header id="volverAlPrincipio" class="header">
+        <div class="container-fluid">
+            <nav class="navbar navbar-expand-lg navbar-dark">
+                <div class="container-fluid">
+                    <a class="navbar-brand nombreNavbar" href="../index.html">Huellas</a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarNav">
+                        <ul class="navbar-nav">
+                            <li class="nav-item">
+                                <a class="nav-link active" href="../index.html">Home</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link active" href="empresa.html">Empresa</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link active" href="productos.html">Productos</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link active" href="catalogo.html">Catálogo</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link active" href="contacto.html">Contacto</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </div>
     </header>
 
     <main>
-        <article>
-            <form action="#">
-				<input type="text" placeholder="DECIME TU NOMBRE"><br>
-				<label for="email">Decime tu email: <br>
-					<input type="email" placeholder="aaa@gmail.com" name="email"><br>
-				</label>
-				<label for="Observaciones"> Deja tu comentario:<br>
-					<textarea placeholder="Observaciones"></textarea>
-				</label> <br>
-				<input type="number" placeholder="DECIME TU EDAD"><br>
-				<div><p class="pDeForm">Sexo:</p>
-					<div>Masculino
-						<input type="radio" name="lado" value="Masculino">
-					</div>
-					<div>Femenino
-						<input type="radio" name="lado" value="Femenino">
-					</div>
-                    <div>No binario
-						<input type="radio" name="lado" value="noBinario">
-					</div>
-				</div>
-				<p class="pDeForm">Que letra te gusta mas?</p>
-				<select name="letra" id="letra"> 
-					<option value="x">X</option>
-					<option value="y">Y</option>
-					<option value="z">Z</option>
-				</select>
-				<div>Queres recibir info sobre nosotros?
-				<input type="checkbox" name="acepta" value="1"></div>
-				<input type="submit" value="ENVIAR FORMULARIO">
-				<input type="reset" value="BORRAR TODO">
-			</form>
-        </article>
+        <div class="container-fluid mt-5">
+            <div class="input-group">
+                <span class="input-group-text">Nombre y Apellido</span>
+                <input type="text" aria-label="Nombre" class="form-control">
+                <input type="text" aria-label="Apellido" class="form-control">
+            </div>
+        </div>
+        <div class="container-fluid">
+            <select class="form-select" aria-label="Default select example">
+                <option selected>Sexo</option>
+                <option value="1">Masculino</option>
+                <option value="2">Femenino</option>
+                <option value="3">No binario</option>
+            </select>
+        </div>
+        <div class="container-fluid">
+            <div class="mb-3">
+                <label for="exampleFormControlInput1" class="form-label">Em@il</label>
+                <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
+            </div>
+            <div class="mb-3">
+                <label for="exampleFormControlTextarea1" class="form-label">Dejenos su comentario:</label>
+                <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+            </div>
+        </div>
+        <div class="container-fluid mb-5">
+            <div class="form-check">
+                <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked>
+                <label class="form-check-label" for="flexCheckChecked">
+                Deseo recibir noticias y ofertas por email.
+                </label>
+            </div>
+        </div>
     </main>
 
-    <footer id="pie">
-        <!-- pie de pagina -->
+    <footer id="pie" class="footer">
         <p><a href=#volverAlPrincipio>Volver al Inicio</a></p>
+        <div class="redesSociales">
+                <img class="icono" src="../image/facebook64px.png" alt="Icono Facebook">
+            <p class="facebook"><a href="">Facebook</a></p>
+                <img class="icono" src="../image/instagram64px.png" alt="Icono instagram">
+            <p class="instagram"><a href="">Instagram</a></p>
+                <img class="icono" src="../image/wsp64px.png"  alt="Icono WhatsApp">
+            <p class="whatsapp"><a href="">WhatsApp</a></p>
+        </div>
     </footer>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous">

@@ -10,40 +10,73 @@
     <title>Empresa</title>
 </head>
 <body>
-    <header id="volverAlPrincipio">
-        <!-- encabezado/barra de navegación -->
-        <nav>
-            <ul class="barraNav">
-                <li> 
-                    <a href="../index.html">INICIO</a>  
-                </li>
-                <li>
-                    <a href="./productos.html">PRODUCTOS</a>
-                </li>
-                <li>
-                    <a href="./catalogo.html">CATÁLOGO</a>
-                </li>
-                <li>
-                    <a href="./empresa.html">EMPRESA</a>
-                </li>
-                <li>
-                    <a href="./contacto.html">CONTACTO</a>
-                </li>
-            </ul>
-        </nav>
+    <header id="volverAlPrincipio" class="header">
+        <div class="container-fluid">
+            <nav class="navbar navbar-expand-lg navbar-dark">
+                <div class="container-fluid">
+                    <a class="navbar-brand nombreNavbar" href="../index.html">Huellas</a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarNav">
+                        <ul class="navbar-nav">
+                            <li class="nav-item">
+                                <a class="nav-link active" href="../index.html">Home</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link active" href="empresa.html">Empresa</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link active" href="productos.html">Productos</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link active" href="catalogo.html">Catálogo</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link active" href="contacto.html">Contacto</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </div>
     </header>
 
     <main>
-        <h1>Acerca de nosotros</h1>
-        <p>Somos una empresa de venta local de ropa de blanco. Comenzamos nuestra actividad hace 17 años con venta a domicilio por catálogo, ahora nos hemos expandido y podemos presentarles nuestro nuevo local en San Rafael!</p>
-        <img src="" alt="">
-        <!-- insertar imagen del local -->
-        <p>Podes encontrarnos en Av. San Martin 122 local 22 (Paseo San Martin)</p>
+        <div class="row row-cols-sm-2">
+            <div class="container-fluid">
+                <div class="card m-3">
+                    <div class="card-body">
+                        <h5 class="card-title">Acerca de nosotros</h5>
+                        <h6 class="card-subtitle mb-2 text-muted">Huellas</h6>
+                        <p class="card-text">Somos una empresa de venta local de ropa de blanco. Comenzamos nuestra actividad hace 17 años con venta a domicilio por catálogo, ahora nos hemos expandido y podemos presentarles nuestro nuevo local en San Rafael!</p>
+                        <p>Podes encontrarnos en Av. San Martin 128 local 22 (Paseo San Martin)</p>
+                        <a href="https://goo.gl/maps/iMN4JkRHH6L8Y9hd7" class="card-link">Ubicación</a>
+                    </div>
+                </div>
+            </div>
+            <div class="container-fluid">
+                <div class="card m-3">
+                    <img src="../image/frenteNegocio.jpeg" class="card-img-top" alt="El negocio abierto con productos exhibidos">
+                    <div class="card-body">
+                        <p class="card-text">Lunes a Sábado de 9:00 a 13:00 y 17:00 a 21:00</p>
+                    </div>
+                </div>
+            </div>
+        </div>
     </main>
 
-    <footer id="pie">
-        <!-- pie de pagina -->
+    <footer id="pie" class="footer">
         <p><a href=#volverAlPrincipio>Volver al Inicio</a></p>
+        <div class="redesSociales">
+                <img class="icono" src="../image/facebook64px.png" alt="Icono Facebook">
+            <p class="facebook"><a href="">Facebook</a></p>
+                <img class="icono" src="../image/instagram64px.png" alt="Icono instagram">
+            <p class="instagram"><a href="">Instagram</a></p>
+                <img class="icono" src="../image/wsp64px.png"  alt="Icono WhatsApp">
+            <p class="whatsapp"><a href="">WhatsApp</a></p>
+        </div>
     </footer>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous">
