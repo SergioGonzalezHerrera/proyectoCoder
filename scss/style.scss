@@ -1,0 +1,18 @@
+@import "./utilities/variables";
+@import "./layout/reseteo";
+@import "./layout/header";
+@import "./layout/footer";
+
+.card-body{
+    text-align: center;
+}
+body{
+    font-family: $letraComun;
+    background-color: $fondoCeleste;
+}
+.bg-marron{
+    background-color: $fondoMarron;
+}
+.btn-primary{
+    background-color: $fondoCeleste;
+}

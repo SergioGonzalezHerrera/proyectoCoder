@@ -1,56 +1,66 @@
-@import url('https://fonts.googleapis.com/css2?family=Kristi&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Kristi&display=swap");
 /*  font-family: 'Kristi', cursive;  */
-@import url('https://fonts.googleapis.com/css2?family=Dosis:wght@200;300&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Dosis:wght@200;300&display=swap");
 /*  font-family: 'Dosis', sans-serif;  */
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
-.nombreNavbar{
-    font-family: 'Kristi', cursive;
-    font-size: xx-large;
-    color: white;
-    text-decoration: none;
+
+.nombreNavbar {
+  font-family: "Kristi", cursive;
+  font-size: xx-large;
+  color: white;
+  text-decoration: none;
 }
-.footer{
-    margin-top: 5px;
-    display: grid;
-    justify-content: space-around;
-    justify-items: center;
-    background-color: rgb(49, 30, 16);
+
+.header {
+  background-color: rgb(49, 30, 16);
 }
-.footer p a{
-    text-decoration: none;
-    color: white;
+
+.nav-item a {
+  color: white;
+  text-decoration: none;
 }
-.card-body{
-    text-align: center;
+
+.footer {
+  margin-top: 5px;
+  display: grid;
+  justify-content: space-around;
+  justify-items: center;
+  background-color: rgb(49, 30, 16);
 }
-body{
-    font-family: 'Dosis', sans-serif;
-    background-color: rgb(67, 124, 144);
+.footer p a {
+  text-decoration: none;
+  color: white;
 }
-.header{
-    background-color: rgb(49, 30, 16);
+
+.icono {
+  max-width: 32px;
+  height: auto;
+  margin: 5px;
 }
-.nav-item a{
-    color: white;
-    text-decoration: none;
+
+.redesSociales {
+  display: flex;
+  flex-direction: row;
+  align-items: baseline;
 }
-.icono{
-    max-width: 32px;
-    height: auto;
-    margin: 5px;
+
+.card-body {
+  text-align: center;
 }
-.redesSociales{
-    display: flex;
-    flex-direction: row;
-    align-items:baseline;
+
+body {
+  font-family: "Dosis", sans-serif;
+  background-color: rgb(67, 124, 144);
 }
-.bg-marron{
-    background-color: rgb(49, 30, 16);
+
+.bg-marron {
+  background-color: rgb(49, 30, 16);
 }
-.btn-primary{
-    background-color: rgb(67, 124, 144);
-}
+
+.btn-primary {
+  background-color: rgb(67, 124, 144);
+}/*# sourceMappingURL=style.css.map */
