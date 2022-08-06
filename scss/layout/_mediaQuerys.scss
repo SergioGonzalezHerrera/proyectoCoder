@@ -1,0 +1,22 @@
+@media (min-width:992px){
+    .textoIndex{
+        font-size: 30px;
+    }
+    .subtituloIndex{
+        font-size: 35px;
+        font-style: oblique;
+    }
+    .tituloIndex{
+        font-size: 40px;
+        font-weight: bold;
+    }
+    .textoEmpresa{
+        @extend .textoIndex;
+    }
+    .subtituloEmpresa{
+        @extend .subtituloIndex;
+    }
+    .tituloEmpresa{
+        @extend .tituloIndex;
+    }
+}

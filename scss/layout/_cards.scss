@@ -1,0 +1,7 @@
+@mixin cardConfig {
+    border: none;
+}
+
+.card{
+    @include cardConfig;
+}

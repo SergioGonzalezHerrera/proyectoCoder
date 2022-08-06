@@ -48,6 +48,23 @@
   align-items: baseline;
 }
 
+@media (min-width: 992px) {
+  .textoIndex, .textoEmpresa {
+    font-size: 30px;
+  }
+  .subtituloIndex, .subtituloEmpresa {
+    font-size: 35px;
+    font-style: oblique;
+  }
+  .tituloIndex, .tituloEmpresa {
+    font-size: 40px;
+    font-weight: bold;
+  }
+}
+.card {
+  border: none;
+}
+
 .card-body {
   text-align: center;
 }
