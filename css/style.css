@@ -2,6 +2,8 @@
 /*  font-family: 'Kristi', cursive;  */
 @import url("https://fonts.googleapis.com/css2?family=Dosis:wght@200;300&display=swap");
 /*  font-family: 'Dosis', sans-serif;  */
+/* SCSS RGB */
+/* SCSS Gradient */
 * {
   margin: 0;
   padding: 0;
@@ -11,16 +13,14 @@
 .nombreNavbar {
   font-family: "Kristi", cursive;
   font-size: xx-large;
-  color: white;
   text-decoration: none;
 }
 
 .header {
-  background-color: rgb(49, 30, 16);
+  background-color: rgb(148, 156, 129);
 }
 
 .nav-item a {
-  color: white;
   text-decoration: none;
 }
 
@@ -29,17 +29,17 @@
   display: grid;
   justify-content: space-around;
   justify-items: center;
-  background-color: rgb(49, 30, 16);
+  background-color: rgb(148, 156, 129);
 }
 .footer p a {
   text-decoration: none;
-  color: white;
+  color: black;
 }
 
 .icono {
   max-width: 32px;
   height: auto;
-  margin: 5px;
+  margin: 15px;
 }
 
 .redesSociales {
@@ -48,6 +48,21 @@
   align-items: baseline;
 }
 
+@media (min-width: 576px) {
+  .volverIincio {
+    grid-area: volver;
+  }
+  .redesSociales {
+    grid-area: redes;
+  }
+  .creator {
+    grid-area: creator;
+  }
+  .footer {
+    display: grid;
+    grid-template-areas: "volver volver" "redes creator";
+  }
+}
 @media (min-width: 992px) {
   .textoIndex, .textoEmpresa {
     font-size: 30px;
@@ -71,13 +86,10 @@
 
 body {
   font-family: "Dosis", sans-serif;
-  background-color: rgb(67, 124, 144);
+  background-color: rgb(239, 193, 169);
+  color: black;
 }
 
 .bg-marron {
-  background-color: rgb(49, 30, 16);
-}
-
-.btn-primary {
-  background-color: rgb(67, 124, 144);
+  background-color: rgb(148, 156, 129);
 }/*# sourceMappingURL=style.css.map */

@@ -3,18 +3,18 @@
     display: grid;
     justify-content: space-around;
     justify-items: center;
-    background-color: $fondoMarron;
+    background-color: $artichoke;
     p{
         a{
             text-decoration: none;
-            color: $textoBlanco;
+            color:black;
         }
     }
 }
 .icono{
     max-width: 32px;
     height: auto;
-    margin: 5px;
+    margin: 15px;
 }
 .redesSociales{
     display: flex;

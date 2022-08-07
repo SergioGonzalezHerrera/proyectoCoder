@@ -1,3 +1,21 @@
+@media (min-width:576px){
+    .volverIincio{
+        grid-area: volver;
+    }
+    .redesSociales{
+        grid-area: redes;
+    }
+    .creator{
+        grid-area: creator;
+    }
+    .footer{
+        display: grid;
+        grid-template-areas: 
+        "volver volver"
+        "redes creator";
+    }
+}
+
 @media (min-width:992px){
     .textoIndex{
         font-size: 30px;

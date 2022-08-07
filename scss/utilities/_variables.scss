@@ -4,6 +4,21 @@
 /*  font-family: 'Dosis', sans-serif;  */
 $letraCursiva: 'Kristi', cursive;
 $letraComun: 'Dosis', sans-serif;
-$fondoMarron: rgb(49, 30, 16);
-$fondoCeleste: rgb(67, 124, 144);
-$textoBlanco: white;
+
+/* SCSS RGB */
+$rifle-green: rgba(62, 80, 60, 1);
+$artichoke: rgba(148, 156, 129, 1);
+$eggshell: rgba(240, 230, 209, 1);
+$dark-salmon: rgba(238, 156, 129, 1);
+$apricot: rgba(239, 193, 169, 1);
+
+/* SCSS Gradient */
+$gradient-top: linear-gradient(0deg, #3e503cff, #949c81ff, #f0e6d1ff, #ee9c81ff, #efc1a9ff);
+$gradient-right: linear-gradient(90deg, #3e503cff, #949c81ff, #f0e6d1ff, #ee9c81ff, #efc1a9ff);
+$gradient-bottom: linear-gradient(180deg, #3e503cff, #949c81ff, #f0e6d1ff, #ee9c81ff, #efc1a9ff);
+$gradient-left: linear-gradient(270deg, #3e503cff, #949c81ff, #f0e6d1ff, #ee9c81ff, #efc1a9ff);
+$gradient-top-right: linear-gradient(45deg, #3e503cff, #949c81ff, #f0e6d1ff, #ee9c81ff, #efc1a9ff);
+$gradient-bottom-right: linear-gradient(135deg, #3e503cff, #949c81ff, #f0e6d1ff, #ee9c81ff, #efc1a9ff);
+$gradient-top-left: linear-gradient(225deg, #3e503cff, #949c81ff, #f0e6d1ff, #ee9c81ff, #efc1a9ff);
+$gradient-bottom-left: linear-gradient(315deg, #3e503cff, #949c81ff, #f0e6d1ff, #ee9c81ff, #efc1a9ff);
+$gradient-radial: radial-gradient(#3e503cff, #949c81ff, #f0e6d1ff, #ee9c81ff, #efc1a9ff);
