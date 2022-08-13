@@ -5,40 +5,86 @@
 @import "./layout/mediaQuerys";
 @import "./layout/cards";
 
-.card-body{
+.card-body {
     text-align: center;
 }
-body{
+
+body {
     font-family: $letraComun;
     background-color: $apricot;
     color: black;
-}   
-.bg-marron{
+    margin-bottom: 120px;
+}
+
+.bg-marron {
     background-color: $artichoke;
 }
-.btn-primary{
-    
-}
-.card-link{
+
+.card-link {
     text-decoration: none;
     font-size: 20px;
     color: white;
 }
-.btn{
+
+.btn {
     background-color: $dark-salmon;
     color: black;
     border: none;
 }
-.accordion-button{
+
+.accordion-button {
     background-color: $artichoke !important;
     border: none;
 }
-.accordion-item{
+
+.accordion-item {
     border: solid black;
 }
-.accordion-body{
+
+.accordion-body {
     background-color: $apricot !important;
 }
-.cardContacto{
+
+.cardContacto {
     background-color: $apricot;
+}
+
+.accordion-button {
+    position: relative;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    text-align: center;
+    border: 0;
+    overflow-anchor: none;
+
+    &:not(.collapsed) {
+        color: black !important;
+        background-color: none !important;
+        box-shadow: none !important;
+
+        &::after {
+            background-image: none !important;
+            transform: none !important;
+        }
+    }
+
+    &::after {
+        flex-shrink: 0;
+        margin-left: auto;
+        background-image: none;
+        background-repeat: no-repeat;
+    }
+
+    &:focus {
+        z-index: 3;
+        border-color: none;
+        outline: 0;
+        box-shadow: none;
+    }
+}
+
+
+.card-title{
+    font-size: 1.25rem !important;
 }

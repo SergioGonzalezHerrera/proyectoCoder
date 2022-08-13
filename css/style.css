@@ -3,7 +3,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Dosis:wght@200;300&display=swap");
 /*  font-family: 'Dosis', sans-serif;  */
 /* SCSS RGB */
-/* SCSS Gradient */
 * {
   margin: 0;
   padding: 0;
@@ -65,15 +64,15 @@
 }
 @media (min-width: 992px) {
   .textoIndex, .textoEmpresa {
-    font-size: 30px;
+    font-size: 30px !important;
   }
   .subtituloIndex, .subtituloEmpresa {
-    font-size: 35px;
-    font-style: oblique;
+    font-size: 35px !important;
+    font-style: oblique !important;
   }
   .tituloIndex, .tituloEmpresa {
-    font-size: 40px;
-    font-weight: bold;
+    font-size: 40px !important;
+    font-weight: bold !important;
   }
 }
 .card {
@@ -88,6 +87,7 @@ body {
   font-family: "Dosis", sans-serif;
   background-color: rgb(239, 193, 169);
   color: black;
+  margin-bottom: 120px;
 }
 
 .bg-marron {
@@ -121,4 +121,41 @@ body {
 
 .cardContacto {
   background-color: rgb(239, 193, 169);
-}/*# sourceMappingURL=style.css.map */
+}
+
+.accordion-button {
+  position: relative;
+  display: flex;
+  align-items: center;
+  width: 100%;
+  text-align: center;
+  border: 0;
+  overflow-anchor: none;
+}
+.accordion-button:not(.collapsed) {
+  color: black !important;
+  background-color: none !important;
+  box-shadow: none !important;
+}
+.accordion-button:not(.collapsed)::after {
+  background-image: none !important;
+  transform: none !important;
+}
+.accordion-button::after {
+  flex-shrink: 0;
+  margin-left: auto;
+  background-image: none;
+  background-repeat: no-repeat;
+}
+.accordion-button:focus {
+  z-index: 3;
+  border-color: none;
+  outline: 0;
+  box-shadow: none;
+}
+
+.card-title {
+  font-size: 1.25rem;
+}
+
+/*# sourceMappingURL=style.css.map */
