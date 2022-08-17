@@ -155,7 +155,16 @@ body {
 }
 
 .card-title {
-  font-size: 1.25rem;
+  font-size: 1.25rem !important;
 }
 
-/*# sourceMappingURL=style.css.map */
+.btn-check:focus + .btn, .btn:focus {
+  outline: 0;
+  box-shadow: none !important;
+}
+.btn-check:checked + .btn, .btn-check:active + .btn, .btn:active, .btn.active {
+  box-shadow: none !important;
+}
+.btn-check:checked + .btn:focus, .btn-check:active + .btn:focus, .btn:active:focus, .btn.active:focus {
+  box-shadow: none !important;
+}/*# sourceMappingURL=style.css.map */

@@ -85,6 +85,25 @@ body {
 }
 
 
-.card-title{
+.card-title {
     font-size: 1.25rem !important;
+}
+
+.btn {
+    .btn-check:focus+&,
+    &:focus {
+        outline: 0;
+        box-shadow: none !important;
+    }
+
+    .btn-check:checked+&,
+    .btn-check:active+&,
+    &:active,
+    &.active {
+        box-shadow: none !important;
+
+        &:focus {
+            box-shadow: none !important;
+        }
+    }
 }
